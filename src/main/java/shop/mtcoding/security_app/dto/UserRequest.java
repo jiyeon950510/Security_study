@@ -8,7 +8,7 @@ public class UserRequest {
 
     @Getter
     @Setter
-    public static class joinDTO {
+    public static class JoinDTO {
         private String username;
         private String password;
         private String email;
@@ -24,4 +24,14 @@ public class UserRequest {
                     .build();
         }
     }
+
+    @Getter
+    @Setter
+    public static class LoginDTO {
+
+        private String username;
+        private String password;
+
+    }
+
 }
